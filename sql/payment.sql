@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS payment;
+CREATE DATABASE payment;
+USE payment;
+CREATE TABLE payment(  
+	`id` BIGINT(20) NOT NULL AUTO_INCREMENT,  
+	`serial` VARCHAR(30) DEFAULT NULL,  
+	PRIMARY KEY (`id`)) 
+ENGINE=INNODB DEFAULT
+CHARSET=utf8;
+ 
+SELECT * FROM payment;
+
+INSERT INTO payment(`id`,`serial`) VALUES(NULL,'aaa');
+
+
